@@ -6,7 +6,7 @@ services:
     buildCommand: pip install -U -r requirements.txt
     startCommand: python3 pingallbot.py
     repo: https://github.com/huybopbi/ping-all      
-    branch: master
+    branch: main
     envVars:
       - key: API_HASH 
         sync: false
