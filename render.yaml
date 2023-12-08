@@ -1,0 +1,17 @@
+services:
+  - type: web
+    plan: free
+    name: huy
+    env: python
+    buildCommand: pip install -U -r requirements.txt
+    startCommand: python3 pingallbot.py
+    repo: https://github.com/huybopbi/ping-all      
+    branch: master
+    envVars:
+      - key: API_HASH 
+        sync: false
+      - key: API_ID 
+        sync: false
+      - key: BOT_TOKEN
+        sync: false 
+    autoDeploy: false
